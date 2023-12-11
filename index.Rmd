@@ -1,0 +1,72 @@
+---
+title: "Funciones Caudraticas"
+author: "Jorge Isaac Dominguez Perez"
+date: "2023-09-05"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+## Funciones Caudraticas
+
+Las funciones cuadratica es una función que en la que uno de los elementos lleva (2) pequeño como indice superior. Una funcion cuadrática también recibe el nombre de función de segundo grado.
+
+## Formula de la función cuadratica
+
+$$
+f(x)= ax^2 + bx + c
+$$
+Donde: 
+
+* *a* es el coeficiente cuadratico.
+* *b* es el coeficiente lineal.
+* *c* es el término constante.
+* *x* es la variable indepemdiente.
+
+### Propiedades de la función cuadratica
+
+La función cuadrática siempre estará comprendida en el primer y cuarto cuadrante de una gráfica. Esto es debido a que para cualquier valor de X introducido a la función, esta devolverá un valor positivo siempre.
+La función cuadratica forma una parabola simetrica con el eje vertical.
+
+El signo del elemento que continene el grado indica sise trata de una funcón convexa o cóncava.
+
+* si el signo es **positivo** -> la función tendra un minimo en **x**, y por tanto, será **cóncava**.
+
+*si el digno es **negativo** -> la función tendra un maximo en X, por lo tanto sera **convexa**.
+
+## Ejemplo
+
+$$
+f(x)=2x^2-3x+1
+$$
+
+```{r}
+library(ggplot2)
+
+x <- seq(-2, 3, by = 0.1)  
+
+y <- 2 * x^2 - 3 * x + 1
+
+data <- data.frame(x = x, y = y)
+
+# Crear el gráfico
+ggplot(data, aes(x, y)) +
+  geom_line() +              # 
+  labs(title = "Función Cuadrática", x = "x", y = "f(x)") +
+  theme_minimal()            
+
+```
+
+```{r}
+
+library(DT)
+x <- seq(-2,3,length=100)
+y <- 2 * x^2 - 3 * x + 1
+tabla <- data.frame (x = x, y = y)
+datatable(tabla)
+```
+
+
+
+
