@@ -8,17 +8,13 @@ output:
 ---
 
 
-### Funciones Caudraticas
+## Funciones Caudraticas
 
 Las funciones cuadratica es una función que en la que uno de los elementos lleva (2) pequeño como indice superior. Una funcion cuadrática también recibe el nombre de función de segundo grado.
 
-### Formula de la función cuadratica
+## Formula de la función cuadratica
 
-$$
-
-f(x)= ax^2 + bx + c
-
-$$
+$f(x)= ax^2 + bx + c$
 Donde: 
 
 * *a* es el coeficiente cuadratico.
@@ -26,7 +22,7 @@ Donde:
 * *c* es el término constante.
 * *x* es la variable indepemdiente.
 
-### Propiedades de la función cuadratica
+## Propiedades de la función cuadratica
 
 La función cuadrática siempre estará comprendida en el primer y cuarto cuadrante de una gráfica. Esto es debido a que para cualquier valor de X introducido a la función, esta devolverá un valor positivo siempre.
 La función cuadratica forma una parabola simetrica con el eje vertical.
